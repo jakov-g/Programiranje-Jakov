@@ -9,6 +9,10 @@ namespace Metode
 {
     internal class Program
     {
+        static int Razlika(int a, int b)
+        {
+            return a - b;
+        }
         static int Zbroji(int a, int b) {
             return a + b;
         }
@@ -57,7 +61,7 @@ namespace Metode
             int a = int.Parse(Console.ReadLine());
             Console.Write("Upisi drugi broj: ");
             int b = int.Parse(Console.ReadLine());
-            Console.WriteLine("Razlika tih brojeva je: " + Oduzmi(a, b));
+            Console.WriteLine("Razlika tih brojeva je: " + Razlika(a, b));
         }
         static void Zadatak1()
         {
