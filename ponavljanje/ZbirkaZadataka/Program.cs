@@ -75,7 +75,7 @@ internal class Program
         Console.WriteLine(" 0 - Izlaz");
     }
 
-    // Ove dvije metode sluze za unos brojeva.
+    // unos brojeva
     static int UcitajInt(string poruka, int min = int.MinValue, int max = int.MaxValue)
     {
         int broj;
@@ -149,11 +149,11 @@ internal class Program
     static double OpsegPravokutnika(double a, double b)
     {
         return 2 * (a + b);
-    };
+    }
     static double PovrsinaPravokutnika(double a, double b)
     {
         return a * b;
-    };
+    }
 
     static void Zadatak03()
     {
@@ -164,11 +164,11 @@ internal class Program
     static double OpsegKruga(double r)
     {
         return 2 * Math.PI * r;
-    };
+    }
     static double PovrsinaKruga(double r)
     {
         return Math.PI * r * r;
-    };
+    }
 
     static void Zadatak04()
     {
@@ -180,11 +180,11 @@ internal class Program
     static double CelsiusUFahrenheit(double c)
     {
         return c * 9 / 5 + 32;
-    };
+    }
     static double FahrenheitUCelsius(double f)
     {
         return (f - 32) * 5 / 9;
-    };
+    }
 
     static void Zadatak05()
     {
@@ -196,7 +196,7 @@ internal class Program
     static double KonacnaCijena(double cijena, double popust)
     {
         return cijena * (1 - popust / 100);
-    };
+    }
 
     static void Zadatak06()
     {
@@ -232,11 +232,11 @@ internal class Program
     static bool JeParan(int n)
     {
         return n % 2 == 0;
-    };
+    }
     static bool JeDjeljiv(int n, int djelitelj)
     {
         return n % djelitelj == 0;
-    };
+    }
 
     static void Zadatak08()
     {
@@ -492,7 +492,6 @@ internal class Program
         Console.WriteLine("\nRezultati:");
         for (int i = 0; i < n; i++)
         {
-            // Pozivamo obje verzije metode, kako zadatak trazi.
             IspisiUcenika(imena[i], postotci[i]);
             IspisiUcenika(imena[i], postotci[i], OdrediOcjenu(postotci[i]));
             ukupno += postotci[i];
